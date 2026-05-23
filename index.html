@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- saved from url=(0063)file:///C:/Users/admin/Downloads/convention-hall-booking_4.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HY One – HY Nine – Sriman | Booking System</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="./HY One – HY Nine – Sriman _ Booking System_files/css2" rel="stylesheet">
 <!-- Google Identity Services -->
-<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="./HY One – HY Nine – Sriman _ Booking System_files/client" async="" defer=""></script>
 <style>
 :root {
   --gold:#c9a84c; --gold-light:#e8c97a;
@@ -338,8 +338,51 @@ td.has-holiday .cal-date-num{color:#b52b2b;}
   .site-header h1{font-size:1.2rem;}
   .login-card{padding:36px 24px 30px;}
 }
+
+  /* ── ADMIN PANEL ── */
+  .admin-add-form {
+    background:#fff;border:2px solid var(--border);border-radius:8px;
+    padding:24px 28px;max-width:800px;margin-bottom:28px;
+  }
+  .form-title-small {
+    font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--dark3);
+    font-weight:700;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);
+  }
+  .admin-users-wrap {
+    background:#fff;border:2px solid var(--border);border-radius:8px;
+    padding:24px 28px;max-width:900px;
+  }
+  table.admin-table {
+    width:100%;border-collapse:collapse;font-size:0.88rem;
+  }
+  table.admin-table th {
+    background:var(--dark2);color:var(--gold-light);
+    padding:10px 12px;text-align:left;font-size:0.78rem;
+    font-weight:700;letter-spacing:0.5px;text-transform:uppercase;border:1px solid var(--dark3);
+  }
+  table.admin-table td {
+    padding:10px 12px;border:1px solid var(--border);vertical-align:middle;
+  }
+  table.admin-table tr:nth-child(even) td { background:var(--cream2); }
+  table.admin-table tr.user-inactive td { opacity:0.55; }
+  .role-badge {
+    padding:3px 10px;border-radius:10px;font-size:0.72rem;font-weight:700;letter-spacing:0.5px;
+  }
+  .role-admin  { background:var(--gold);color:var(--dark); }
+  .role-staff  { background:#e3f2fd;color:#0d47a1; }
+  .status-pill {
+    padding:3px 10px;border-radius:10px;font-size:0.72rem;font-weight:700;
+  }
+  .pill-active   { background:#d4f5e0;color:#2d7a4f; }
+  .pill-inactive { background:#fdd5d5;color:#b52b2b; }
+  .pill-btn {
+    padding:4px 12px;border-radius:4px;border:1.5px solid var(--dark3);
+    background:transparent;color:var(--dark3);font-size:0.78rem;font-weight:600;
+    cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;
+  }
+  .pill-btn:hover { background:var(--dark3);color:#fff; }
 </style>
-</head>
+<style id="googleidentityservice_button_styles">.qJTHM{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;color:#202124;direction:ltr;-webkit-touch-callout:none;font-family:Roboto-Regular,arial,sans-serif;-webkit-font-smoothing:antialiased;font-weight:400;margin:0;overflow:hidden;-webkit-text-size-adjust:100%}.ynRLnc{left:-9999px;position:absolute;top:-9999px}.L6cTce{display:none}.bltWBb{overflow-wrap:break-word;word-break:break-word}.hSRGPd{color:#1a73e8;cursor:pointer;font-weight:500;text-decoration:none}.Bz112c-W3lGp{height:16px;width:16px}.Bz112c-E3DyYd{height:20px;width:20px}.Bz112c-r9oPif{height:24px;width:24px}.Bz112c-u2z5K{height:36px;width:36px}.Bz112c-uaxL4e{border-radius:10px}.LgbsSe-Bz112c{display:block}.S9gUrf-YoZ4jf{border:none;margin:0;padding:0}.S9gUrf-YoZ4jf *{border:none;margin:0;padding:0}.fFW7wc-ibnC6b>.aZ2wEe>div{border-color:#4285f4}.P1ekSe-ZMv3u{-webkit-transition:height .2s linear;transition:height .2s linear}.P1ekSe-ZMv3u>div:first-child{background-color:#1a73e8!important;-webkit-transition:width .3s linear;transition:width .3s linear}.P1ekSe-ZMv3u>div:nth-child(2){background-image:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.7)),to(rgba(255,255,255,.7))),-webkit-gradient(linear,left top,right top,from(#1a73e8),to(#1a73e8))!important;background-image:-webkit-linear-gradient(left,rgba(255,255,255,.7),rgba(255,255,255,.7)),-webkit-linear-gradient(left,#1a73e8,#1a73e8)!important;background-image:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(90deg,#1a73e8,#1a73e8)!important}.P1ekSe-ZMv3u>div:nth-child(3){background-image:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.7)),to(rgba(255,255,255,.7))),-webkit-gradient(linear,left top,right top,from(#1a73e8),to(#1a73e8))!important;background-image:-webkit-linear-gradient(left,rgba(255,255,255,.7),rgba(255,255,255,.7)),-webkit-linear-gradient(left,#1a73e8,#1a73e8)!important;background-image:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(90deg,#1a73e8,#1a73e8)!important}.haAclf{display:inline-block}.nsm7Bb-HzV7m-LgbsSe{border-radius:4px;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s;transition:background-color .218s,border-color .218s;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-webkit-appearance:none;background-color:#fff;background-image:none;border:1px solid #dadce0;color:#3c4043;cursor:pointer;font-family:Google Sans,arial,sans-serif;font-size:14px;height:40px;letter-spacing:.25px;outline:none;overflow:hidden;padding:0 12px;position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}@media screen and (-ms-high-contrast:active){.nsm7Bb-HzV7m-LgbsSe{border:2px solid windowText;color:windowText}}@media screen and (preferes-contrast:more){.nsm7Bb-HzV7m-LgbsSe{color:#000}}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe{font-size:14px;height:32px;letter-spacing:.25px;padding:0 10px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe{font-size:11px;height:20px;letter-spacing:.3px;padding:0 8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe{padding:0;width:40px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe{width:32px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe{width:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK{border-radius:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe{border-radius:16px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe{border-radius:10px}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc{border:none;color:#fff}.nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc{background-color:#1a73e8}.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{background-color:#202124;color:#e8eaed}@media screen and (prefers-contrast:more){.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{color:#fff}}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:18px;margin-right:8px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:14px;min-width:14px;width:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:10px;min-width:10px;width:10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin-left:8px;margin-right:-4px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:10px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:4px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-top-left-radius:3px;border-bottom-left-radius:3px;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;align-items:center;background-color:#fff;height:36px;margin-left:-10px;margin-right:12px;min-width:36px;width:36px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:28px;margin-left:-8px;margin-right:10px;min-width:28px;width:28px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:16px;margin-left:-6px;margin-right:8px;min-width:16px;width:16px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:3px;margin-left:2px;margin-right:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:8px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;-webkit-box-align:center;align-items:center;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;height:100%;position:relative;width:100%}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX{-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:1;-webkit-box-flex:1;flex-grow:1;font-family:Google Sans,arial,sans-serif;font-weight:500;overflow:hidden;text-overflow:ellipsis;vertical-align:top}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-weight:300}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:0;-webkit-box-flex:0;flex-grow:0}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{-webkit-transition:background-color .218s;transition:background-color .218s;bottom:0;left:0;position:absolute;right:0;top:0}.nsm7Bb-HzV7m-LgbsSe:focus,.nsm7Bb-HzV7m-LgbsSe:hover{box-shadow:none;border-color:rgb(210,227,252);outline:none}.nsm7Bb-HzV7m-LgbsSe:focus-within{outline:2px solid #00639b;border-color:transparent}.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.08)}.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.1)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.24)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.32)}.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY{border-radius:50%;display:-webkit-box;display:-webkit-flex;display:flex;height:20px;margin-left:-4px;margin-right:8px;min-width:20px;width:20px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-family:Roboto;font-size:12px;text-align:left}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS,.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf{overflow:hidden;text-overflow:ellipsis}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;-webkit-box-align:center;align-items:center;color:#5f6368;fill:#5f6368;font-size:11px;font-weight:400}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#e8eaed;fill:#e8eaed}@media screen and (prefers-contrast:more){.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff,.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#000;fill:#000}}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c{height:18px;margin:-3px -3px -3px 2px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:3px;border-bottom-right-radius:3px;margin-left:12px;margin-right:-10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:18px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}.L5Fo6c-bF1uUb:focus{border:none;outline:none}sentinel{}</style><link id="googleidentityservice" type="text/css" media="all" href="./HY One – HY Nine – Sriman _ Booking System_files/style" rel="stylesheet"></head>
 <body>
 
 <!-- ==================== LOGIN SCREEN ==================== -->
@@ -348,16 +391,20 @@ td.has-holiday .cal-date-num{color:#b52b2b;}
     <div class="login-logo">🏛️</div>
     <div class="login-title">HY One – HY Nine – Sriman<br>Booking System</div>
     <div class="login-sub">Sign in to manage hall bookings</div>
-    <hr class="login-divider"/>
+    <hr class="login-divider">
     <button class="google-btn" onclick="handleGoogleLogin()">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
-        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
       </svg>
       Sign in with Google
     </button>
+    <!-- Fallback render target if popup is blocked -->
+    <div id="google-btn-container" style="margin-top:12px;display:flex;justify-content:center;"></div>
+    <!-- Status / error messages -->
+    <div id="login-status" style="display:none;margin-top:16px;padding:10px 14px;border-radius:6px;border:1.5px solid;font-size:0.85rem;font-weight:600;text-align:left;line-height:1.5;"></div>
     <div class="login-note">Access restricted to authorised staff only</div>
   </div>
 </div>
@@ -374,27 +421,27 @@ td.has-holiday .cal-date-num{color:#b52b2b;}
   </header>
 
   <nav>
-    <button class="active" onclick="showPage('home-page',this)">Home</button>
-    <button onclick="showPage('overview-page',this)">Overview</button>
-    <button onclick="showPage('date-page',this)">Date</button>
-    <button onclick="showPage('booking-page',this)">Booking Form</button>
+    <button class="active" onclick="showPage(&#39;home-page&#39;,this)">Home</button>
+    <button onclick="showPage(&#39;overview-page&#39;,this)">Overview</button>
+    <button onclick="showPage(&#39;date-page&#39;,this)">Date</button>
+    <button onclick="showPage(&#39;booking-page&#39;,this)">Booking Form</button>
     <button class="reset-btn" onclick="resetApp()">Reset</button>
-  </nav>
+  <button style="border-color: rgb(128, 203, 196); color: rgb(128, 203, 196);">⚙ Setup</button></nav>
 
   <!-- ===== HOME PAGE ===== -->
   <div id="home-page" class="page active">
     <div class="nav-cards">
-      <div class="nav-card" onclick="showPage('overview-page',null)">
+      <div class="nav-card" onclick="showPage(&#39;overview-page&#39;,null)">
         <div class="icon">📅</div>
         <h3>Overview</h3>
         <p>3-month calendar with AM/PM availability per hall</p>
       </div>
-      <div class="nav-card" onclick="showPage('date-page',null)">
+      <div class="nav-card" onclick="showPage(&#39;date-page&#39;,null)">
         <div class="icon">🔍</div>
         <h3>Date</h3>
         <p>Check availability for a specific date</p>
       </div>
-      <div class="nav-card" onclick="showPage('booking-page',null)">
+      <div class="nav-card" onclick="showPage(&#39;booking-page&#39;,null)">
         <div class="icon">📝</div>
         <h3>Booking Form</h3>
         <p>Submit a new booking via Google Form</p>
@@ -436,7 +483,7 @@ td.has-holiday .cal-date-num{color:#b52b2b;}
       </div>
       <div class="form-group">
         <label>Year</label>
-        <select id="ov-year"><option value="">-- Select Year --</option></select>
+        <select id="ov-year"><option value="">-- Select Year --</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option></select>
       </div>
       <button class="btn btn-primary" onclick="renderOverviewCalendar()">View Calendar</button>
     </div>
@@ -471,7 +518,7 @@ td.has-holiday .cal-date-num{color:#b52b2b;}
       </div>
       <div class="form-group">
         <label>Select Date</label>
-        <input type="date" id="date-picker"/>
+        <input type="date" id="date-picker">
       </div>
       <button class="btn btn-check" onclick="checkDateStatus()">Check Status</button>
     </div>
@@ -485,13 +532,7 @@ td.has-holiday .cal-date-num{color:#b52b2b;}
   <div id="booking-page" class="page">
     <div class="section-title">Booking Form</div>
     <div class="booking-embed-wrap">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScAbU6MNFu_TXwJPN_neUxXhkjos6u0a3tT2gNW1s4_3sr-HA/viewform?embedded=true"
-        width="100%"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        title="Hall Booking Form">
+      <iframe src="./HY One – HY Nine – Sriman _ Booking System_files/viewform.html" width="100%" frameborder="0" marginheight="0" marginwidth="0" title="Hall Booking Form">
         Loading…
       </iframe>
       <div class="gform-note">
@@ -499,7 +540,7 @@ td.has-holiday .cal-date-num{color:#b52b2b;}
       </div>
     </div>
     <div class="bottom-home-link">
-      <button class="btn-home-bottom" onclick="showPage('home-page',null)">🏠 Back to Home</button>
+      <button class="btn-home-bottom" onclick="showPage(&#39;home-page&#39;,null)">🏠 Back to Home</button>
     </div>
   </div>
 
@@ -508,15 +549,15 @@ td.has-holiday .cal-date-num{color:#b52b2b;}
 <!-- ==================== APPS SCRIPT SETUP MODAL ==================== -->
 <div id="script-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center;">
   <div style="background:#fff;border:2px solid var(--gold);border-radius:10px;padding:36px;max-width:520px;width:90%;">
-    <h2 style="font-family:'Playfair Display',serif;color:var(--dark3);margin-bottom:12px;">⚙️ Google Apps Script Setup</h2>
+    <h2 style="font-family:&#39;Playfair Display&#39;,serif;color:var(--dark3);margin-bottom:12px;">⚙️ Google Apps Script Setup</h2>
     <p style="font-size:0.88rem;color:#555;margin-bottom:18px;">Paste your deployed Apps Script Web App URL below. This connects the calendar to your Google Sheets booking data.</p>
     <div class="form-group">
       <label>Apps Script Web App URL</label>
-      <input type="text" id="script-url-input" placeholder="https://script.google.com/macros/s/.../exec" style="font-size:0.85rem;"/>
+      <input type="text" id="script-url-input" placeholder="https://script.google.com/macros/s/.../exec" style="font-size:0.85rem;">
     </div>
     <div style="display:flex;gap:12px;margin-top:8px;">
-      <button class="btn btn-primary" onclick="saveScriptUrl()">Save & Connect</button>
-      <button class="btn btn-reset2" onclick="document.getElementById('script-modal').style.display='none'">Cancel</button>
+      <button class="btn btn-primary" onclick="saveScriptUrl()">Save &amp; Connect</button>
+      <button class="btn btn-reset2" onclick="document.getElementById(&#39;script-modal&#39;).style.display=&#39;none&#39;">Cancel</button>
     </div>
   </div>
 </div>
@@ -552,45 +593,114 @@ function setSlotStatus(hall, dateStr, slot, status) {
 }
 
 // ═══════════════════════════════════════════════════════
-//  GOOGLE LOGIN (simulated OAuth consent flow)
+//  CONFIGURATION — REAL GOOGLE AUTH
 // ═══════════════════════════════════════════════════════
+const CLIENT_ID   = '195766795814-qjnmntc7b4c3bsenbn9dtumd9tj46b5n.apps.googleusercontent.com';
+const AUTH_SCRIPT = 'https://script.google.com/macros/s/AKfycbyuXEUTsN6DbOBgwrTCStIFhCiwGYsB2DXJLq1za-XNVJ2D6ZBStjynLXOH0oTlNpjB/exec';
+
 let currentUser = JSON.parse(sessionStorage.getItem('hb_user') || 'null');
 
-function handleGoogleLogin() {
-  // In production: replace with real Google OAuth / Google Identity Services
-  // For self-hosted use, this opens a Google OAuth consent screen
-  const CLIENT_ID = ''; // ← Paste your Google OAuth Client ID here
+// ── Show login status feedback ──────────────────────────
+function setLoginStatus(msg, type) {
+  const el = document.getElementById('login-status');
+  if (!el) return;
+  el.textContent = msg;
+  el.style.display = msg ? 'block' : 'none';
+  el.style.background = type === 'error' ? '#fdd5d5' : type === 'checking' ? '#e8f4fd' : '#d4f5e0';
+  el.style.color      = type === 'error' ? '#b52b2b' : type === 'checking' ? '#0f3460' : '#2d7a4f';
+  el.style.borderColor= type === 'error' ? '#e57373' : type === 'checking' ? '#64b5f6' : '#66bb6a';
+}
 
-  if (CLIENT_ID) {
-    // Real OAuth flow
-    google.accounts.id.initialize({
-      client_id: CLIENT_ID,
-      callback: onGoogleCredential,
-      auto_select: false,
-    });
-    google.accounts.id.prompt();
-  } else {
-    // Demo mode — simulate login with a placeholder user
-    simulateLogin();
+// ── Initialise Google Identity Services ─────────────────
+// Uses OAuth2 token flow with prompt=select_account so Google
+// ALWAYS shows the account chooser — never auto-selects.
+let tokenClient = null;
+
+function initGoogleAuth() {
+  if (typeof google === 'undefined') {
+    setTimeout(initGoogleAuth, 300);
+    return;
   }
+  // Disable One Tap entirely so it never auto-signs in
+  google.accounts.id.disableAutoSelect();
+
+  // Use the OAuth2 token client — forces account picker every time
+  tokenClient = google.accounts.oauth2.initTokenClient({
+    client_id: CLIENT_ID,
+    scope: 'openid email profile',
+    prompt: 'select_account',          // Always show account chooser
+    callback: onOAuthToken,
+  });
 }
 
-function onGoogleCredential(response) {
-  // Decode JWT
-  const payload = JSON.parse(atob(response.credential.split('.')[1]));
-  currentUser = { name: payload.name, email: payload.email, picture: payload.picture };
-  sessionStorage.setItem('hb_user', JSON.stringify(currentUser));
-  showMainApp();
+// ── Triggered when user clicks "Sign in with Google" ────
+function handleGoogleLogin() {
+  setLoginStatus('Opening Google sign-in…', 'checking');
+  if (typeof google === 'undefined' || !tokenClient) {
+    setLoginStatus('Google Auth library not loaded. Check your internet connection.', 'error');
+    return;
+  }
+  // Always opens full Google account picker with email + password
+  tokenClient.requestAccessToken({ prompt: 'select_account' });
 }
 
-function simulateLogin() {
-  currentUser = {
-    name: 'Staff User',
-    email: 'staff@example.com',
-    picture: null
-  };
-  sessionStorage.setItem('hb_user', JSON.stringify(currentUser));
-  showMainApp();
+// ── Called by Google OAuth2 after user picks account & consents ─
+async function onOAuthToken(tokenResponse) {
+  if (tokenResponse.error) {
+    if (tokenResponse.error === 'access_denied') {
+      setLoginStatus('Sign-in was cancelled. Please try again.', 'error');
+    } else {
+      setLoginStatus('Google sign-in failed: ' + tokenResponse.error, 'error');
+    }
+    return;
+  }
+
+  setLoginStatus('Verifying access…', 'checking');
+
+  // Use the access token to fetch the user's Google profile
+  let profile;
+  try {
+    const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+      headers: { Authorization: 'Bearer ' + tokenResponse.access_token }
+    });
+    profile = await res.json();
+  } catch(e) {
+    setLoginStatus('Failed to retrieve Google profile. Please try again.', 'error');
+    return;
+  }
+
+  const email   = profile.email;
+  const name    = profile.name;
+  const picture = profile.picture;
+
+  if (!email) {
+    setLoginStatus('Could not read your Google account email. Please try again.', 'error');
+    return;
+  }
+
+  // Check against AllowedUsers sheet via Apps Script
+  try {
+    const res  = await fetch(`${AUTH_SCRIPT}?action=checkUser&email=${encodeURIComponent(email)}`);
+    const data = await res.json();
+
+    if (data.allowed) {
+      currentUser = { name, email, picture, role: data.role || 'staff' };
+      sessionStorage.setItem('hb_user', JSON.stringify(currentUser));
+      setLoginStatus('', '');
+      showMainApp();
+    } else {
+      // Authenticated with Google but NOT on the allowlist — revoke & block
+      google.accounts.oauth2.revoke(tokenResponse.access_token, () => {});
+      setLoginStatus(
+        `⛔ Access Denied — "${email}" is not authorised to access this system. Contact your administrator.`,
+        'error'
+      );
+    }
+  } catch(err) {
+    // Apps Script unreachable — never fail open
+    setLoginStatus('Could not verify access permissions. Please try again later.', 'error');
+    console.error('Auth check failed:', err);
+  }
 }
 
 function showMainApp() {
@@ -598,22 +708,38 @@ function showMainApp() {
   document.getElementById('main-app').style.display = 'block';
   renderUserBar();
   checkScriptConfig();
+  // Render admin panel if user is admin
+  if (currentUser?.role === 'admin') renderAdminPanel();
 }
 
 function renderUserBar() {
   if (!currentUser) return;
   const bar = document.getElementById('user-info-bar');
   const avatar = currentUser.picture
-    ? `<img src="${currentUser.picture}" class="user-avatar" alt="avatar"/>`
-    : `<div class="user-avatar-placeholder">${currentUser.name.charAt(0)}</div>`;
-  bar.innerHTML = `${avatar}<span>${currentUser.name}</span><button class="logout-btn" onclick="logout()">Sign out</button>`;
+    ? `<img src="${currentUser.picture}" class="user-avatar" referrerpolicy="no-referrer" alt="avatar"/>`
+    : `<div class="user-avatar-placeholder">${currentUser.name.charAt(0).toUpperCase()}</div>`;
+  const roleBadge = `<span style="font-size:0.7rem;padding:2px 8px;border-radius:10px;font-weight:700;
+    background:${currentUser.role==='admin'?'var(--gold)':'rgba(255,255,255,0.15)'};
+    color:${currentUser.role==='admin'?'var(--dark)':'rgba(255,255,255,0.8)'};">${currentUser.role?.toUpperCase()}</span>`;
+  bar.innerHTML = `${avatar}<span>${currentUser.name}</span>${roleBadge}
+    <button class="logout-btn" onclick="logout()">Sign out</button>`;
 }
 
 function logout() {
+  if (typeof google !== 'undefined') {
+    try {
+      google.accounts.id.disableAutoSelect();
+      google.accounts.id.revoke(currentUser?.email || '', () => {});
+    } catch(e) {}
+  }
   sessionStorage.removeItem('hb_user');
   currentUser = null;
+  tokenClient = null;
   document.getElementById('main-app').style.display = 'none';
   document.getElementById('login-screen').style.display = 'flex';
+  setLoginStatus('Signed out successfully. Please sign in again.', 'success');
+  // Re-initialise so next login always shows account picker
+  setTimeout(initGoogleAuth, 400);
 }
 
 function checkScriptConfig() {
@@ -622,8 +748,133 @@ function checkScriptConfig() {
   }
 }
 
-// Check if already logged in (session persists tab refresh)
-if (currentUser) { showMainApp(); }
+// ── Auto-restore session on page refresh ─────────────────
+// Always init auth library (needed even for session restore path)
+initGoogleAuth();
+if (currentUser) {
+  showMainApp();
+}
+
+// ═══════════════════════════════════════════════════════
+//  ADMIN PANEL
+// ═══════════════════════════════════════════════════════
+function renderAdminPanel() {
+  // Add Admin tab to nav if not already there
+  if (document.getElementById('admin-nav-btn')) return;
+  const navBtn = document.createElement('button');
+  navBtn.id = 'admin-nav-btn';
+  navBtn.innerHTML = '🛡 Admin';
+  navBtn.style.cssText = 'border-color:#ce93d8;color:#ce93d8;';
+  navBtn.onmouseover = () => { navBtn.style.background='#ce93d8'; navBtn.style.color='#1a1a2e'; };
+  navBtn.onmouseout  = () => { navBtn.style.background=''; navBtn.style.color='#ce93d8'; };
+  navBtn.onclick = () => { showPage('admin-page', navBtn); loadAdminUsers(); };
+  document.querySelector('nav').insertBefore(navBtn, document.querySelector('nav .reset-btn'));
+
+  // Create admin page div if not there
+  if (!document.getElementById('admin-page')) {
+    const div = document.createElement('div');
+    div.id = 'admin-page';
+    div.className = 'page';
+    div.innerHTML = `
+      <div class="section-title">🛡 Admin Panel — User Management</div>
+      <div class="admin-add-form">
+        <div class="form-title-small">Add New User</div>
+        <div class="row">
+          <div class="form-group"><label>Email</label>
+            <input type="text" id="adm-email" placeholder="user@gmail.com"/></div>
+          <div class="form-group"><label>Name</label>
+            <input type="text" id="adm-name" placeholder="Full Name"/></div>
+          <div class="form-group"><label>Role</label>
+            <select id="adm-role">
+              <option value="staff">Staff</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-primary" onclick="addAdminUser()">➕ Add User</button>
+        <div id="adm-msg" style="margin-top:10px;font-size:0.88rem;display:none;"></div>
+      </div>
+      <div class="admin-users-wrap">
+        <div class="form-title-small" style="margin-bottom:14px;">Authorised Users</div>
+        <div id="admin-users-list"><div class="cal-loading"><div class="spinner"></div>Loading users…</div></div>
+      </div>`;
+    document.getElementById('main-app').appendChild(div);
+  }
+}
+
+async function loadAdminUsers() {
+  const list = document.getElementById('admin-users-list');
+  if (!list) return;
+  list.innerHTML = '<div class="cal-loading"><div class="spinner"></div>Loading…</div>';
+  try {
+    const res  = await fetch(`${AUTH_SCRIPT}?action=getUsers`);
+    const data = await res.json();
+    if (!data.users || data.users.length === 0) {
+      list.innerHTML = '<p style="color:#888;font-style:italic;">No users found in AllowedUsers sheet.</p>';
+      return;
+    }
+    let html = `<table class="admin-table">
+      <thead><tr><th>Email</th><th>Name</th><th>Role</th><th>Status</th><th>Added By</th><th>Action</th></tr></thead><tbody>`;
+    data.users.forEach(u => {
+      const active  = (u.active === true || u.active === 'TRUE' || u.active === 'true');
+      const isMe    = u.email?.toLowerCase() === currentUser?.email?.toLowerCase();
+      html += `<tr class="${active ? '' : 'user-inactive'}">
+        <td>${u.email}</td>
+        <td>${u.name}</td>
+        <td><span class="role-badge role-${u.role}">${u.role?.toUpperCase()}</span></td>
+        <td><span class="status-pill ${active?'pill-active':'pill-inactive'}">${active?'Active':'Inactive'}</span></td>
+        <td style="font-size:0.78rem;color:#888;">${u.addedBy||'—'}</td>
+        <td>${isMe ? '<span style="color:#aaa;font-size:0.78rem;">You</span>' :
+          `<button class="pill-btn" onclick="toggleAdminUser('${u.email}',${!active})">${active?'Deactivate':'Activate'}</button>`}
+        </td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+    list.innerHTML = html;
+  } catch(e) {
+    list.innerHTML = '<p style="color:#b52b2b;">Failed to load users. Check Apps Script URL.</p>';
+  }
+}
+
+async function addAdminUser() {
+  const email = document.getElementById('adm-email').value.trim();
+  const name  = document.getElementById('adm-name').value.trim();
+  const role  = document.getElementById('adm-role').value;
+  const msg   = document.getElementById('adm-msg');
+  if (!email || !name) { showAdmMsg('Please enter email and name.', 'error'); return; }
+  if (!email.includes('@')) { showAdmMsg('Enter a valid email address.', 'error'); return; }
+  showAdmMsg('Adding user…', 'info');
+  try {
+    const url  = `${AUTH_SCRIPT}?action=addUser&email=${encodeURIComponent(email)}&name=${encodeURIComponent(name)}&role=${role}&addedBy=${encodeURIComponent(currentUser.email)}`;
+    const res  = await fetch(url);
+    const data = await res.json();
+    if (data.success) {
+      showAdmMsg(`✅ ${name} (${email}) added as ${role}.`, 'success');
+      document.getElementById('adm-email').value = '';
+      document.getElementById('adm-name').value  = '';
+      loadAdminUsers();
+    } else {
+      showAdmMsg('Failed to add user: ' + (data.error||'unknown error'), 'error');
+    }
+  } catch(e) { showAdmMsg('Network error. Try again.', 'error'); }
+}
+
+async function toggleAdminUser(email, makeActive) {
+  try {
+    const url  = `${AUTH_SCRIPT}?action=toggleUser&email=${encodeURIComponent(email)}&active=${makeActive}`;
+    const res  = await fetch(url);
+    const data = await res.json();
+    if (data.success) loadAdminUsers();
+    else alert('Failed to update user.');
+  } catch(e) { alert('Network error.'); }
+}
+
+function showAdmMsg(text, type) {
+  const el = document.getElementById('adm-msg');
+  el.textContent = text;
+  el.style.display = 'block';
+  el.style.color = type==='error'?'#b52b2b':type==='success'?'#2d7a4f':'#0f3460';
+}
 
 // ═══════════════════════════════════════════════════════
 //  APPS SCRIPT / GOOGLE SHEETS SYNC
@@ -898,5 +1149,6 @@ function goToBooking(dateStr, slot) {
   document.querySelector('nav').appendChild(cfgBtn);
 })();
 </script>
-</body>
-</html>
+
+
+</body></html>
